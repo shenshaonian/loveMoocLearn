@@ -1,0 +1,179 @@
+{"timestamp":"2019-08-15T03:44:31.601+0000","status":400,"error":"Bad Request","message":"Required String parameter 'otpCode' is not present","path":"/user/register"}
+
+Required String parameter 'otpCode' is not present  检查前端代码发现otpCode和optCode
+前面的值写错了
+ <div class="form-group">
+                <label class="control-label">验证码</label>
+                <div>
+                    <input class="form-control" type="text" placeholder="验证码" name="optCode" id="optCode">
+                </div>
+        </div>
+将这个改一下就行
+
+
+{"timestamp":"2019-08-15T06:18:33.098+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/user/register"}
+No message available  session中没有取到值
+String inSessionOtpCode = (String) this.httpServletRequest.getSession().getAttribute(telphone);
+
+@CrossOrigin这个无法做到跨域的session共享，对ajax来说没用
+
+allowCredentials允许凭据 
+
+@CrossOrigin(allowCredentials = "true",allowedHeaders = "*")
+允许快鱼传输所有的header参数，将用于使用token放入header域做session共享的跨域请求
+
+同时前端也要指定允许ajax跨域请求
+xhrFields:{withCredentials:true},
+
+
+自增id
+<insert id="insertSelective" parameterType="com.miaoshaproject.dataObject.UserPasswordDO" keyProperty="id" useGeneratedKeys="true">
+
+晕，上面这个加错地方了  <insert id="insertSelective" parameterType="com.miaoshaproject.dataObject.UserDO" keyProperty="id" useGeneratedKeys="true">
+
+插入中文的问题。数据库要解决一下。
+jdbc:mysql://xxxxx:3306/miaosha?useUnicode=true&characterEncoding=utf-8
+
+给手机号加了唯一索引
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '111' for key 'telphone_unique_index'
+; Duplicate entry '111' for key 'telphone_unique_index'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '111' for key 'telphone_unique_index'] with root cause
+Duplicate重复
+
+
+validator在哪添加的。。。。
+https://blog.csdn.net/icannotdebug/article/details/78708202
+先看完视屏在自己研究一下，无非字段验证
+
+//注册  这个鬼#炒掉了。。。。同事说这个是找节点用的--触发--
+            $("#register").on("click",function(){
+                window.location.href="getotp.html";
+            });
+
+
+Hibernate Validator Engine  快速校验
+<dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>5.2.4.Final</version>
+      </dependency>
+
+
+
+商品模块开发，，，，，先设计领域模型。。虽然还不太懂哈，
+
+
+-------------item表-----
+库存
+销量的字段是应该在商品表中  还是在销量表中--订单表-----领域模型
+
+商品库存，为了后续性能考虑 这个会设计到另外一张表上
+
+销量每次销售了东西都会发生变化----暂且用于展示--放在这个表中--当发生了销售的时候-通过异步的方式0--给这个销量
+--加1------不影响主业务
+-----------item表---
+
+
+------item_stock--库存表
+
+`
+------改为false，，，不然会将我们前面对mapper.xml里面做的改动，在运行generator命令的时候全部覆盖
+<!--是否覆盖-->
+        <overwrite>false</overwrite>
+
+
+
+itemDOList.stream().map  lambda操作确实要学学，，，太，，，省事儿
+
+
+rel 属性规定当前文档与被链接文档之间的关系。
+在下面的例子中，rel 属性指示被链接的文档是一个样式表：
+<head>
+<link rel="stylesheet" type="text/css" href="theme.css" />
+</head>
+
+<style> 标签用于为 HTML 文档定义样式信息。
+
+
+
+交易模型管理，，，，先设计交易模型，，不要先设计数据库
+
+
+关于订单号
+ //订单号16位
+
+        //前8位为时间信息 年月日-----可以用于归档信息
+
+
+        //中间6位为自增序列----防止重复
+
+        //最后2位为分库，分表位----为以后
+        Integer userId = 1000122;
+        userId % 100
+
+select for update作用
+
+
+@Transactional(propagation = Propagation.REQUIRES_NEW)开启新的事物，就是这里面的执行完了就直接提交
+哪怕外面的事物失败了也不会滚，，，不管订单成功没有，保证事务的唯一性
+
+propagation-----传播
+
+
+
+<div class="form-actions">
+            <button class="btn blue" id="createOrder" type="submit">
+                下单
+            </button>
+        </div>
+
+
+$("#createOrder").on("click",function(){
+                $.ajax({
+                        type:"POST",
+                        contentType:"application/x-www-form-urlencoded",
+                        url:"http://localhost:8090/order/creatorder",
+                        data:{
+                            "itemId":g_itemVO.id,
+                            "amount":1,
+                        },
+                        //支持跨域
+                        xhrFields:{withCredentials:true},
+                        success:function(data){
+                            if(data.status == "success"){
+                                alert("下单成功")
+                          
+                            }else{
+                                alert("下单失败，原因为"+data.data.errMsg);
+                                if(data.data.errCode == 20003){
+                                    window.location.href="login.html";
+                                }
+                            }
+                        },
+                        error:function(data){
+                            alert("下单失败，原因为"+data.responseText);
+                        }
+                    });
+                });
+
+
+配置秒杀模型--
+promo---促销
+
+
+mysql 中设置datatime默认值0000 00 00   00 00 00的问题
+https://blog.csdn.net/u011499484/article/details/80415417
+
+生成表
+
+做promoService------思考，，，，前端上面我们要给用户展示在哪，展示上面东西，
+
+
+使用聚合模型，其实就是一个实体包裹另外一个，，，，，这里就是itemmodel
+它不光是商品信息，同时我们把它的活动信息如果有  也带回去给前端展示
+
+
+set	Interval--阻隔。。。前端设置定时器
+
+
+
+

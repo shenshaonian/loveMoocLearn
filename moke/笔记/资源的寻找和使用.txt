@@ -1,0 +1,14 @@
+
+js
+/Users/shenshaonian/learning/forinterview/springBoot/moke/html/static/assets/global/plugins/jquery-1.11.0.min.js
+
+
+用户模型管理的优化
+/Users/shenshaonian/learning/forinterview/springBoot/moke/html/static/assets/global/plugins/bootstrap/css/bootstrap.min.css
+
+
+用button它自己的样式又要找个什么东西
+/Users/shenshaonian/learning/forinterview/springBoot/moke/html/static/assets/global/css/components.css
+
+还要找一个和login相关的界面
+/Users/shenshaonian/learning/forinterview/springBoot/moke/html/static/assets/admin/pages/css/login.css

@@ -1,0 +1,11 @@
+consumes的例子（方法仅处理request Content-Type为“application/json”类型的请求。）
+
+
+
+跨域问题，
+
+
+ajax，还是js的冒泡习性
+
+
+

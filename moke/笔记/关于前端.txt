@@ -1,0 +1,15 @@
+type:"POST",
+               1     // contentType:"application/x-www-form-urlencoded",
+               2     contentType:"application/json",
+
+ajax里面   1用于那个单个单个的，2用于那种实体的，
+，2我还没搞通，fuck
+
+
+LoginInterceptor   可以看dp的登录拦截器
+https://blog.csdn.net/u014044812/article/details/78455053
+
+
+js获取url传递参数，js获取url？号后面的参数
+获取指定的URL参数值
+https://www.cnblogs.com/karila/p/5991340.html
