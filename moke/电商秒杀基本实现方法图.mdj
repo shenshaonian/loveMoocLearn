@@ -1,0 +1,552 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRDnYMjtC34=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 40,
+							"top": 16,
+							"width": 267,
+							"height": 64,
+							"text": "springboos+mybatis\n一个电商秒杀系统的基本流程和代码的实现\n快速浏览了解"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRRFIcj3kFM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#9bff38",
+							"font": "Arial;13;0",
+							"left": 48,
+							"top": 120,
+							"width": 600,
+							"height": 96
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRSVScj7fRA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 80,
+							"top": 144,
+							"width": 80,
+							"height": 48,
+							"text": "      \n       html"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRV4h8kKuRE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 192,
+							"top": 144,
+							"width": 80,
+							"height": 48,
+							"text": "      \n       css"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRWs3MkRRo0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 301,
+							"top": 144,
+							"width": 80,
+							"height": 53,
+							"text": "      \n       jQuery"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRXlJ8kY22U=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 424,
+							"top": 144,
+							"width": 80,
+							"height": 48,
+							"text": "      \n       图片"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFsnRb3VsknY24=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"lineColor": "#da1a1a",
+							"fontColor": "#d93030",
+							"font": "Courier New;22;0",
+							"left": 560,
+							"top": 152,
+							"width": 60,
+							"height": 34,
+							"text": "前端"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRgQPMk/lio=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#9bff38",
+							"font": "Arial;13;0",
+							"left": 44,
+							"top": 285,
+							"width": 600,
+							"height": 96
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRgQPMlA/hY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 144,
+							"top": 304,
+							"width": 98,
+							"height": 55,
+							"text": "      \n    controller\n通用异常处理"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRgQPMlByZo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 352,
+							"top": 304,
+							"width": 98,
+							"height": 55,
+							"text": "      \nviewObject\n通用返回对象"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFsnRgQPMlEyR0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"lineColor": "#da1a1a",
+							"fontColor": "#d93030",
+							"font": "Courier New;22;0",
+							"left": 556,
+							"top": 317,
+							"width": 76,
+							"height": 34,
+							"text": "接入层"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFsnRs1Dslo3BE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFsnRgQPMk/lio="
+							},
+							"tail": {
+								"$ref": "AAAAAAFsnRRFIcj3kFM="
+							},
+							"lineStyle": 1,
+							"points": "234:216;160:248;238:284"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFsnRt9b8luKUs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFsnRgQPMk/lio="
+							},
+							"tail": {
+								"$ref": "AAAAAAFsnRRFIcj3kFM="
+							},
+							"lineStyle": 1,
+							"points": "463:216;520:240;435:284"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRwbeMl+Msg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#9bff38",
+							"font": "Arial;13;0",
+							"left": 40,
+							"top": 424,
+							"width": 600,
+							"height": 96
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRwbeMl/Nhs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 68,
+							"top": 445,
+							"width": 80,
+							"height": 53,
+							"text": "      \n   用户服务"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRwbeMmAa9k=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 180,
+							"top": 445,
+							"width": 80,
+							"height": 53,
+							"text": "      \n   商品服务"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRwbeMmBs3U=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 289,
+							"top": 445,
+							"width": 80,
+							"height": 53,
+							"text": "      \n交易服务"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnRwbeMmCcjg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 412,
+							"top": 445,
+							"width": 80,
+							"height": 53,
+							"text": "      \n   活动服务"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFsnRwbeMmD2qo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"lineColor": "#da1a1a",
+							"fontColor": "#d93030",
+							"font": "Courier New;22;0",
+							"left": 548,
+							"top": 453,
+							"width": 76,
+							"height": 34,
+							"text": "业务层"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR1RDsmimA0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#9bff38",
+							"font": "Arial;13;0",
+							"left": 36,
+							"top": 566,
+							"width": 600,
+							"height": 96
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR1RDsmjm9I=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 64,
+							"top": 587,
+							"width": 80,
+							"height": 53,
+							"text": "      \n   事务"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR1RDsmkb5Y=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 176,
+							"top": 587,
+							"width": 80,
+							"height": 53,
+							"text": "      \n   数据Dao"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR1RDsmlDsU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 285,
+							"top": 587,
+							"width": 80,
+							"height": 53,
+							"text": "      \n本地缓存"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR1RDsmm5JI=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 408,
+							"top": 587,
+							"width": 85,
+							"height": 53,
+							"text": "      \n 集中式缓存"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFsnR1RDsmnep4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"lineColor": "#da1a1a",
+							"fontColor": "#d93030",
+							"font": "Courier New;22;0",
+							"left": 544,
+							"top": 595,
+							"width": 76,
+							"height": 34,
+							"text": "数据层"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR6EVMm8SNE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#9bff38",
+							"font": "Arial;13;0",
+							"left": 36,
+							"top": 692,
+							"width": 600,
+							"height": 96
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFsnR6EVMnBmdA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"lineColor": "#da1a1a",
+							"fontColor": "#d93030",
+							"font": "Courier New;22;0",
+							"left": 512,
+							"top": 721,
+							"width": 98,
+							"height": 34,
+							"text": "数据库层"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnR+Gxcnjakc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 88,
+							"top": 712,
+							"width": 104,
+							"height": 48,
+							"text": "          \n       mysql"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnSADZMpNr2o=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 328,
+							"top": 712,
+							"width": 104,
+							"height": 48,
+							"text": "          \n      redis"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnSCWIspep/8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#9bff38",
+							"font": "Arial;13;0",
+							"left": 36,
+							"top": 822,
+							"width": 600,
+							"height": 96
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFsnSCWIspfkoQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"lineColor": "#da1a1a",
+							"fontColor": "#d93030",
+							"font": "Courier New;22;0",
+							"left": 512,
+							"top": 851,
+							"width": 98,
+							"height": 34,
+							"text": "运行环境"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnSCWIspgHyc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 88,
+							"top": 842,
+							"width": 104,
+							"height": 53,
+							"text": "          \n       阿里云主机"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnSCWIsphljE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 328,
+							"top": 842,
+							"width": 104,
+							"height": 48,
+							"text": "          \n      本地电脑"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFsnSEIiMprBNE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 64,
+							"top": 936,
+							"width": 440.06884765625,
+							"height": 115,
+							"text": "本人使用工具：mac+idea+阿里云上的mysql版本5.7+maven地址\n<mirror>\n      <id>alimaven</id>\n      <name>aliyun maven</name>\n <url>http://maven.aliyun.com/nexus/content/groups/public</url>\n      <mirrorOf>central</mirrorOf>        \n   </mirror>"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFsnSRcDcpx98E=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFsnRwbeMl+Msg="
+							},
+							"tail": {
+								"$ref": "AAAAAAFsnRgQPMk/lio="
+							},
+							"lineStyle": 1,
+							"points": "342:381;340:423"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFsnSR+qcp1kWA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFsnR1RDsmimA0="
+							},
+							"tail": {
+								"$ref": "AAAAAAFsnRwbeMl+Msg="
+							},
+							"lineStyle": 1,
+							"points": "338:520;336:565"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFsnSSHPsp4s2Y=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFsnR6EVMm8SNE="
+							},
+							"tail": {
+								"$ref": "AAAAAAFsnR1RDsmimA0="
+							},
+							"lineStyle": 1,
+							"points": "335:662;335:691"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFsnSSNQMp79zM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFsnSCWIspep/8="
+							},
+							"tail": {
+								"$ref": "AAAAAAFsnR6EVMm8SNE="
+							},
+							"lineStyle": 1,
+							"points": "335:788;335:821"
+						}
+					]
+				}
+			]
+		}
+	]
+}
