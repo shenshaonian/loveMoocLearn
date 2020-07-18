@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 这里填写对应的Dao文件所在的路径 -->
+<mapper namespace="com.fzq.test.dao.PersonDao"    >
+    <!-- 填写数据库里实例Person对应的表的表名 -->
+    <!-- 这里是作为一个变量使用 -->
+    <sql id="table">person</sql>
+
+    <!-- id属性填写Dao文件里的函数名称 xxType是参数或是结果的类型根据情况填写 -->
+    <!-- 查询所有   -->
+    <select id="getAll" resultType="com.fzq.test.model.Person">
+        SELECT
+        *
+        FROM
+        <include refid="table" />
+    </select>
+
+
+    <!-- 根据id查询 -->
+    <select id="getPersonById" resultType="com.fzq.test.model.Person">
+        SELECT
+        *
+        FROM
+        <include refid="table"/>
+        WHERE
+        id = #{id}
+    </select>
+
+    <!-- 增 -->
+    <insert id="newp" parameterType="com.fzq.test.model.Person">
+        INSERT INTO
+        <include refid="table"/>
+        (name,phone)
+        VALUES
+        (#{name},#{phone})
+    </insert>
+
+    <!-- 改 -->
+    <update id="update" parameterType="com.fzq.test.model.Person">
+        UPDATE
+        <include refid="table"/>
+        SET
+        <!--<if test="name != null">name = #{name}</if>-->
+        name  = #{name},phone = #{phone},status = #{status}
+        WHERE
+        id = #{id}
+    </update>
+
+    <!-- 删 -->
+    <delete id="delete" parameterType="com.fzq.test.model.Person">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE
+        id = #{id}
+    </delete>
+</mapper>
